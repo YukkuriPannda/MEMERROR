@@ -9,7 +9,7 @@ public class StartController : MonoBehaviour
     public Animator animator;
 
     // Name of the trigger parameter in the Animator. Create this trigger in the Animator Controller.
-    public string triggerName = "active";
+    
 
     // Optional: call this from a Button's OnClick if you prefer OnClick over pointer events.
     public void Start()
@@ -17,13 +17,12 @@ public class StartController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    public void PlayAnimation()
+    public void ActiveButton()
     {
-        animator.SetTrigger(triggerName);
-
+        animator.SetTrigger("active");
     }
-    public void OnMouseEnter()
+    public void DeactiveButton()
     {
-        PlayAnimation();
+        animator.SetTrigger("deactive");
     }
 }
