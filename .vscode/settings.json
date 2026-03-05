@@ -1,4 +1,11 @@
 {
-  "markdown.preview.scrollPreviewWithEditor": false,
-  "markdown.preview.scrollEditorWithPreview": false
+    "problems.decorations.enabled": true,
+    "problems.showCurrentInStatus": true,
+    "editor.showUnused": true,
+    "editor.showDeprecated": true,
+    "workbench.colorCustomizations": {
+        "editorError.foreground": "#ff0000",
+        "editorWarning.foreground": "#ffa500",
+        "editorInfo.foreground": "#0000ff"
+    }
 }
