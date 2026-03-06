@@ -1003,6 +1003,12 @@ MonoBehaviour:
   play_the_game_animator: {fileID: 1815374032}
   settings_animator: {fileID: 1904298883}
   how_to_play_animator: {fileID: 576346181}
+  active_color:
+    serializedVersion: 2
+    rgba: 3489660928
+  deactive_color:
+    serializedVersion: 2
+    rgba: 4278190080
 --- !u!1 &1815374029
 GameObject:
   m_ObjectHideFlags: 0
