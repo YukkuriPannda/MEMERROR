@@ -97,3 +97,12 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Unity recovery files
+/[Aa]ssets/_Recovery/
+
+# Unity AI Assistant auto-generated package
+/Packages/com.unity_*
+
+# Visual Studio new solution format
+*.slnx

@@ -65,4 +65,5 @@ public class StartController : MonoBehaviour
         how_to_play_animator.gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "03._how_to_play";
         how_to_play_animator.gameObject.transform.GetChild(0).transform.localScale = new Vector3(1f, 1f, 1);
     }
+    
 }
