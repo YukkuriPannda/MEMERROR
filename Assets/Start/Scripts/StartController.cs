@@ -15,6 +15,10 @@ public class StartController : MonoBehaviour
     public Color32 active_color = new Color32(255, 255, 255, 255);
     public Color32 deactive_color = new Color32(0, 0, 0, 255);
 
+    public void Start()
+    {
+        SaveDataManager.Load();
+    }
     public void ChangeToGameScene()
     {
         SceneManager.LoadScene("Game");
