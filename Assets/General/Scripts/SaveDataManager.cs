@@ -1,4 +1,4 @@
-using System.Diagnostics;
+using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
@@ -9,25 +9,43 @@ public static class SaveDataManager
 	[System.Serializable]
 	public class Keybindings
 	{
-		public KeyCode moveUp;
-		public KeyCode moveDown;
-		public KeyCode moveLeft;
-		public KeyCode moveRight;
-		public KeyCode Skill1;
-		public KeyCode Skill2;
-		public KeyCode Skill3;
-		public KeyCode activateSkill;
+		public List<KeyCode> moveUp;
+		public List<KeyCode> moveDown;
+		public List<KeyCode> moveLeft;
+		public List<KeyCode> moveRight;
+		public List<KeyCode> Skill1;
+		public List<KeyCode> Skill2;
+		public List<KeyCode> Skill3;
+		public List<KeyCode> activateSkill;
 
 		public Keybindings()
 		{
-			moveUp = KeyCode.W;
-			moveDown = KeyCode.S;
-			moveLeft = KeyCode.A;
-			moveRight = KeyCode.D;
-			Skill1 = KeyCode.X;
-			Skill2 = KeyCode.C;
-			Skill3 = KeyCode.V;
-			activateSkill = KeyCode.Space;
+			moveUp = new List<KeyCode> { KeyCode.W };
+			moveDown = new List<KeyCode> { KeyCode.S };
+			moveLeft = new List<KeyCode> { KeyCode.A };
+			moveRight = new List<KeyCode> { KeyCode.D };
+			Skill1 = new List<KeyCode> { KeyCode.X };
+			Skill2 = new List<KeyCode> { KeyCode.C };
+			Skill3 = new List<KeyCode> { KeyCode.V };
+			activateSkill = new List<KeyCode> { KeyCode.Space };
+		}
+
+		public const int Count = 8;
+
+		public List<KeyCode> this[int i]
+		{
+			get => i switch
+			{
+				0 => moveUp,
+				1 => moveDown,
+				2 => moveLeft,
+				3 => moveRight,
+				4 => Skill1,
+				5 => Skill2,
+				6 => Skill3,
+				7 => activateSkill,
+				_ => throw new System.IndexOutOfRangeException()
+			};
 		}
 	}
 
@@ -75,14 +93,14 @@ public static class SaveDataManager
 			data = new SaveData();
 			data.keyBindings = new Keybindings
 			{
-				moveUp = KeyCode.W,
-				moveDown = KeyCode.S,
-				moveLeft = KeyCode.A,
-				moveRight = KeyCode.D,
-				Skill1 = KeyCode.X,
-				Skill2 = KeyCode.C,
-				Skill3 = KeyCode.V,
-				activateSkill = KeyCode.Space
+				moveUp = new List<KeyCode> { KeyCode.W },
+				moveDown = new List<KeyCode> { KeyCode.S },
+				moveLeft = new List<KeyCode> { KeyCode.A },
+				moveRight = new List<KeyCode> { KeyCode.D },
+				Skill1 = new List<KeyCode> { KeyCode.X },
+				Skill2 = new List<KeyCode> { KeyCode.C },
+				Skill3 = new List<KeyCode> { KeyCode.V },
+				activateSkill = new List<KeyCode> { KeyCode.Space }
 			};
 			data.playerData = new PlayerData
 			{
