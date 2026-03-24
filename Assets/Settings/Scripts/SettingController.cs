@@ -1,3 +1,4 @@
+using Microsoft.Win32.SafeHandles;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -45,7 +46,17 @@ public class SettingController : MonoBehaviour
                 Destroy(child.gameObject);
             foreach (KeyCode kc in kb[i])
             {
+                if (kc == KeyCode.None) continue;
                 GameObject keyBox = Instantiate(keyBoxPrefab, keyBoxes);
+                if (kc == KeyCode.DownArrow || kc == KeyCode.UpArrow || kc == KeyCode.LeftArrow || kc == KeyCode.RightArrow)
+                {
+                    keyBox.transform.Find("Text (TMP)").gameObject.SetActive(false);
+                    keyBox.transform.Find("ArrowIcon").gameObject.SetActive(true);
+                }
+                if (kc == KeyCode.UpArrow) keyBox.transform.Find("ArrowIcon").GetComponent<RectTransform>().rotation = Quaternion.Euler(0, 0, 0);
+                if (kc == KeyCode.LeftArrow) keyBox.transform.Find("ArrowIcon").GetComponent<RectTransform>().rotation = Quaternion.Euler(0, 0, 90);
+                if (kc == KeyCode.DownArrow) keyBox.transform.Find("ArrowIcon").GetComponent<RectTransform>().rotation = Quaternion.Euler(0, 0, 180);
+                if (kc == KeyCode.RightArrow) keyBox.transform.Find("ArrowIcon").GetComponent<RectTransform>().rotation = Quaternion.Euler(0, 0, 270);
                 keyBox.transform.Find("Text (TMP)")
                     .GetComponent<TextMeshProUGUI>().text = kc.ToString();
             }
