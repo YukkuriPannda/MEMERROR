@@ -50,6 +50,7 @@ public class StartController : MonoBehaviour
     {
         if (settingCanvas != null)
         {
+
             settingCanvas.SetActive(false);
             globalVolumeAnimator.SetTrigger("close");
         }
