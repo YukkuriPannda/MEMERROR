@@ -12,6 +12,8 @@ public class StartController : MonoBehaviour
     public Animator play_the_game_animator;
     public Animator settings_animator;
     public Animator how_to_play_animator;
+    public GameObject settingCanvas;
+    public Animator globalVolumeAnimator;
     public Color32 active_color = new Color32(255, 255, 255, 255);
     public Color32 deactive_color = new Color32(0, 0, 0, 255);
 
@@ -36,9 +38,21 @@ public class StartController : MonoBehaviour
         play_the_game_animator.gameObject.transform.GetChild(0).transform.localScale = new Vector3(1f, 1f, 1);
     }
 
-    public void ChangeToSettingsScene()
+    public void OpenSettings()
     {
-        SceneManager.LoadScene("Settings");
+        if (settingCanvas != null)
+        {
+            settingCanvas.SetActive(true);
+            globalVolumeAnimator.SetTrigger("open");
+        }
+    }
+    public void CloseSettings()
+    {
+        if (settingCanvas != null)
+        {
+            settingCanvas.SetActive(false);
+            globalVolumeAnimator.SetTrigger("close");
+        }
     }
     public void ActiveSettingsButton()
     {
@@ -65,5 +79,5 @@ public class StartController : MonoBehaviour
         how_to_play_animator.gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "03._how_to_play";
         how_to_play_animator.gameObject.transform.GetChild(0).transform.localScale = new Vector3(1f, 1f, 1);
     }
-    
+
 }

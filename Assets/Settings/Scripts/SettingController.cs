@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class SettingController : MonoBehaviour
 {
@@ -19,6 +20,10 @@ public class SettingController : MonoBehaviour
 
     void Start()
     {
+        var quitButton = transform.Find("QuitButton")?.GetComponent<Button>();
+        if (quitButton != null)
+            quitButton.onClick.AddListener(CloseMenu);
+
         RefreshKeyBindingsUI();
     }
 
@@ -66,6 +71,24 @@ public class SettingController : MonoBehaviour
             entry.callback.AddListener(_ => OnKeyConfigClicked(capturedIndex));
             eventTrigger.triggers.Add(entry);
         }
+    }
+
+    public void CloseMenu()
+    {
+        var animator = GetComponent<Animator>();
+        if (animator != null)
+            StartCoroutine(DeactiveAfterAnimation(animator));
+        else
+            gameObject.SetActive(false);
+    }
+
+    private System.Collections.IEnumerator DeactiveAfterAnimation(Animator animator)
+    {
+        animator.SetTrigger("deactive");
+        yield return null;
+        var stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        yield return new WaitForSeconds(stateInfo.length);
+        gameObject.SetActive(false);
     }
 
     void OnKeyConfigClicked(int index)
