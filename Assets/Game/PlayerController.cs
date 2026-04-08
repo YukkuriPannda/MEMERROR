@@ -4,8 +4,12 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
-    [SerializeField] Transform anker;
+    [SerializeField] public Transform anker;
     [SerializeField] InputActionReference moveAction;
+    public PlayerSkillBase normalSkill;
+    public float normalSkillFrequency = 0.5f;
+    private float nextNormalSkillTime = 0f;
+
 
     void OnEnable()
     {
@@ -25,6 +29,11 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         AnkerRotate();
+        if (Time.time >= nextNormalSkillTime)
+        {
+            NormalSkill();
+            nextNormalSkillTime = Time.time + normalSkillFrequency;
+        }
     }
 
     void Move()
@@ -40,5 +49,10 @@ public class PlayerController : MonoBehaviour
         Vector2 dir = (Vector2)(mouseWorld - anker.position);
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
         anker.rotation = Quaternion.Euler(0f, 0f, angle);
+    }
+
+    void NormalSkill()
+    {
+        normalSkill.Skill(this);
     }
 }
