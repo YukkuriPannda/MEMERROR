@@ -22,7 +22,9 @@
       "Bash(xargs grep:*)",
       "Bash(find:*)",
       "Bash(xargs -0 grep -l \"InputAction\\\\|KeyCode\")",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "mcp__notion__notion-search",
+      "mcp__notion__notion-fetch"
     ]
   }
 }
