@@ -300,14 +300,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity_6uqyh3ci6-_x8q.com.unity.ai.assistant": {
-      "version": "file:com.unity_6uqyh3ci6-_x8q.com.unity.ai.assistant",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {
-        "com.unity.test-framework": "1.6.0"
-      }
-    },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
       "depth": 0,
