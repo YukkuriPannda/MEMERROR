@@ -24,7 +24,11 @@
       "Bash(xargs -0 grep -l \"InputAction\\\\|KeyCode\")",
       "Bash(ls:*)",
       "mcp__notion__notion-search",
-      "mcp__notion__notion-fetch"
+      "mcp__notion__notion-fetch",
+      "Bash(cat Logs/shadercompiler-UnityShaderCompiler*.log)",
+      "Read(//c/Users/Pannda/.claude/**)",
+      "Read(//c/Users/Pannda/AppData/Roaming/Claude/**)",
+      "Bash(claude mcp:*)"
     ]
   }
 }
