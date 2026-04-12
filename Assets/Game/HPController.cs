@@ -10,7 +10,7 @@ public class HPController : MonoBehaviour
 
 	public event Action<float> OnDamaged;
 	public event Action OnDeath;
-
+	public event Action OnHPChanged;
 	public enum HPType
 	{
 		Player,
@@ -23,6 +23,7 @@ public class HPController : MonoBehaviour
 	void Awake()
 	{
 		CurrentHP = maxHP;
+
 	}
 
 	public void TakeDamage(float amount)
@@ -32,6 +33,7 @@ public class HPController : MonoBehaviour
 
 		CurrentHP = Mathf.Max(0f, CurrentHP - amount);
 		OnDamaged?.Invoke(amount);
+		OnHPChanged?.Invoke();
 
 		if (CurrentHP <= 0f)
 			OnDeath?.Invoke();
@@ -41,5 +43,6 @@ public class HPController : MonoBehaviour
 	public void Heal(float amount)
 	{
 		CurrentHP = Mathf.Min(maxHP, CurrentHP + amount);
+		OnHPChanged?.Invoke();
 	}
 }
