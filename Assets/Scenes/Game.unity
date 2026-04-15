@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 1351634806}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -764,6 +764,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &2005326837 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2196142233839308397, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+  m_PrefabInstance: {fileID: 2748736075958197314}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2748736075958197314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -772,70 +777,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1920
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1080
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.009259259
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.009259259
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.009259259
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.78
-      objectReference: {fileID: 0}
-    - target: {fileID: 1590517133945131344, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693468608374749168, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 1327130300296108332, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2005326837}
+    - target: {fileID: 1327130300296108332, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      propertyPath: attackInstance
+      value: 
+      objectReference: {fileID: 7744307355349650751, guid: 179aa08effd783246baa3fea4276abcd, type: 3}
     - target: {fileID: 5244506352748327961, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
       propertyPath: m_Name
       value: zakoEnemy
@@ -884,10 +833,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1584331524}
-    - target: {fileID: 8135437284087711627, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
-      propertyPath: m_RenderMode
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
