@@ -385,11 +385,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZakoEnemyController
   moveSpeed: 2
-  attackDistance: 1.5
+  attackDistance: 1
   chargeDuration: 0.6
-  attackDuration: 0.3
-  damageDuration: 0.4
-  attackInstance: {fileID: 0}
+  attackDuration: 1
+  damageDuration: 1
+  lungeSpeed: 12
+  lungeDrag: 3
+  attackInstance: {fileID: 7744307355349650751, guid: 179aa08effd783246baa3fea4276abcd, type: 3}
+  animator: {fileID: 2196142233839308397}
   currentState: 0
 --- !u!1 &5428603515512772724
 GameObject:
