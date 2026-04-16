@@ -16,11 +16,13 @@ public class ZakoEnemyController : MonoBehaviour
     [SerializeField] float chargeDuration = 0.6f;
     [SerializeField] float attackDuration = 0.3f;
     [SerializeField] float damageDuration = 0.4f;
+    [SerializeField] float lungeSpeed = 6f;
+    [SerializeField] float lungeDrag = 12f;
     [SerializeField] GameObject attackInstance;
     [SerializeField] Animator animator;
-
     Transform target;
     HPController hpController;
+    Vector2 lungeVelocity;
     [SerializeField] State currentState = State.following;
     float stateTimer = 0f;
 
@@ -73,9 +75,11 @@ public class ZakoEnemyController : MonoBehaviour
 
     void UpdateAttacking()
     {
+        lungeVelocity = Vector2.Lerp(lungeVelocity, Vector2.zero, lungeDrag * Time.deltaTime);
+        transform.Translate(lungeVelocity * Time.deltaTime);
+
         if (stateTimer <= 0f)
         {
-            animator.Play("Attack");
             ChangeState(State.following);
         }
     }
@@ -98,7 +102,13 @@ public class ZakoEnemyController : MonoBehaviour
             case State.attacking:
                 stateTimer = attackDuration;
                 if (attackInstance != null)
-                    Instantiate(attackInstance, transform.position, transform.rotation);
+                {
+                    Instantiate(attackInstance, transform.position + transform.up * -1f, transform.rotation, transform);
+                }
+                if (target != null)
+                {
+                    lungeVelocity = (target.position - transform.position).normalized * lungeSpeed;
+                }
                 break;
 
             case State.damaging:
@@ -119,13 +129,9 @@ public class ZakoEnemyController : MonoBehaviour
             ChangeState(State.damaging);
             animator.Play("Dmg");
         }
-
-
     }
-
     void OnDeath()
     {
         ChangeState(State.deathing);
     }
-
 }
