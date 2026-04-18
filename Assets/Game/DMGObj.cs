@@ -1,12 +1,20 @@
 using UnityEngine;
 using System;
+using System.Collections;
+using System.Collections.Generic;
+
 public class DMGObj : MonoBehaviour
 {
     [SerializeField] float damage = 10f;
+    [SerializeField] float damageInterval = 1f;
     [SerializeField] HPController.HPType[] targetTypes;
 
-    void Start()
+    // 衝突中のオブジェクトとそれぞれのタイマーを管理
+    Dictionary<Collider2D, float> contactTimers = new Dictionary<Collider2D, float>();
+    void OnEnable()
     {
+        contactTimers.Clear();
+
         var col = GetComponent<Collider2D>();
         if (col == null) return;
 
@@ -14,24 +22,60 @@ public class DMGObj : MonoBehaviour
         int count = col.Overlap(new ContactFilter2D().NoFilter(), results);
         for (int i = 0; i < count; i++)
         {
+            if (!IsTarget(results[i])) continue;
             TryDamage(results[i]);
             if (this == null) return;
+            contactTimers[results[i]] = damageInterval;
+        }
+    }
+    void Update()
+    {
+        var keys = new List<Collider2D>(contactTimers.Keys);
+
+        foreach (var key in keys)
+        {
+            if (key == null)
+            {
+                contactTimers.Remove(key);
+                continue;
+            }
+
+            contactTimers[key] -= Time.deltaTime;
+            if (contactTimers[key] <= 0f)
+            {
+                TryDamage(key);
+                contactTimers[key] = damageInterval;
+            }
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
+        if (!IsTarget(other)) return;
+        if (contactTimers.ContainsKey(other)) return;
+
         TryDamage(other);
+        contactTimers[other] = damageInterval;
+        Debug.Log(contactTimers);
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        contactTimers.Remove(other);
+    }
+
+    bool IsTarget(Collider2D other)
+    {
+        HPController hp = other.GetComponent<HPController>();
+        if (hp == null) return false;
+        return Array.IndexOf(targetTypes, hp.Type) >= 0;
     }
 
     void TryDamage(Collider2D other)
     {
-        Debug.Log("DMGObj TryDamage: " + other.name + " from " + gameObject.name);
         HPController hp = other.GetComponent<HPController>();
-        Debug.Log("DMGObj TryDamage HPController: " + (hp != null ? hp.name : "null"));
         if (hp == null) return;
         if (Array.IndexOf(targetTypes, hp.Type) < 0) return;
         hp.TakeDamage(damage);
-        Destroy(gameObject);
     }
 }

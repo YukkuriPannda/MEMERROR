@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class ZakobeamEnemyController : MonoBehaviour
 {
     public enum State
@@ -46,7 +45,7 @@ public class ZakobeamEnemyController : MonoBehaviour
         switch (currentState)
         {
             case State.following: UpdateFollowing(); break;
-            case State.escaping:  UpdateEscaping(); break;
+            case State.escaping: UpdateEscaping(); break;
             case State.charging: UpdateCharging(); break;
             case State.attacking: UpdateAttacking(); break;
             case State.damaging: UpdateDamaging(); break;
@@ -91,7 +90,7 @@ public class ZakobeamEnemyController : MonoBehaviour
         {
             animator.Play("Attack");
             float dist = Vector2.Distance(transform.position, target.position);
-            if(dist <= attackDistance)
+            if (dist <= attackDistance)
                 ChangeState(State.escaping);
             else
                 ChangeState(State.following);
@@ -102,7 +101,7 @@ public class ZakobeamEnemyController : MonoBehaviour
         if (stateTimer <= 0f)
         {
             float dist = Vector2.Distance(transform.position, target.position);
-            if(dist <= attackDistance)
+            if (dist <= attackDistance)
                 ChangeState(State.escaping);
             else
                 ChangeState(State.following);
@@ -122,7 +121,14 @@ public class ZakobeamEnemyController : MonoBehaviour
             case State.attacking:
                 stateTimer = attackDuration;
                 if (attackInstance != null)
-                    Instantiate(attackInstance, transform.position, transform.rotation);
+                {
+                    Vector3 spawnPos = transform.position;
+                    float angle = animator.transform.eulerAngles.z - 90;
+                    Quaternion spawnRot = Quaternion.Euler(0, 0, angle);
+                    Destroy(Instantiate(attackInstance, spawnPos, spawnRot), 1.2f);
+
+                }
+
                 break;
 
             case State.damaging:
