@@ -5,13 +5,6 @@ using UnityEngine.UI;
 /// uGUI の Image.fillAmount で HP を表現する。
 /// fill   : 現在 HP（即時更新）
 /// red    : ダメージ量を赤で残し、ゆっくり fill に追いつく
-///
-/// ヒエラルキー構成（Tools > Create HP Bar で自動生成）:
-///   HPBar_Canvas   Canvas (World Space)
-///   └ HPBar        ← このスクリプト
-///     ├ background Image (HPBar@2x.png)
-///     ├ red        Image (赤, Filled / Horizontal)
-///     └ fill       Image (HPBar_fill@2x.png, Filled / Horizontal)
 /// </summary>
 public class HPBar : MonoBehaviour
 {

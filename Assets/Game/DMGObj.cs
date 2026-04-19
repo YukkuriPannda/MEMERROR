@@ -9,6 +9,9 @@ public class DMGObj : MonoBehaviour
     [SerializeField] float damageInterval = 1f;
     [SerializeField] HPController.HPType[] targetTypes;
 
+    public Action<float> onHit;
+
+
     // 衝突中のオブジェクトとそれぞれのタイマーを管理
     Dictionary<Collider2D, float> contactTimers = new Dictionary<Collider2D, float>();
     void OnEnable()
@@ -77,5 +80,6 @@ public class DMGObj : MonoBehaviour
         if (hp == null) return;
         if (Array.IndexOf(targetTypes, hp.Type) < 0) return;
         hp.TakeDamage(damage);
+        onHit?.Invoke(damage);
     }
 }

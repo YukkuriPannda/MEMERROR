@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9380b8db032a35b41b14be3f95e447d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DMGObj
-  damage: 1
+  damage: 5
   damageInterval: 0.1
   targetTypes: 00000000
 --- !u!50 &4367455792492228705
