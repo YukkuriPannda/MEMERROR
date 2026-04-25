@@ -292,6 +292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HPController
   maxHP: 100
+  parry: 0
   hpType: 1
 --- !u!50 &3013964496213825603
 Rigidbody2D:
@@ -385,9 +386,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZakobeamEnemyController
   moveSpeed: 2
-  attackDistance: 1.5
+  attackDistance: 3
   chargeDuration: 0.6
-  attackDuration: 0.3
+  attackDuration: 1.2
   damageDuration: 0.4
   attackInstance: {fileID: 4296292090743832608, guid: f8b4c1daff2b69a4485837c59fc96b5a, type: 3}
   animator: {fileID: 2196142233839308397}

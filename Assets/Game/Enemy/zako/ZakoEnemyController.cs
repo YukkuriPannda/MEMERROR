@@ -103,7 +103,13 @@ public class ZakoEnemyController : MonoBehaviour
                 stateTimer = attackDuration;
                 if (attackInstance != null)
                 {
-                    Instantiate(attackInstance, transform.position + transform.up * -1f, transform.rotation, transform);
+                    DMGObj dmgObj = Instantiate(
+                        attackInstance,
+                        transform.position + transform.up * -1f,
+                        transform.rotation,
+                        transform
+                    ).GetComponent<DMGObj>();
+                    dmgObj.owner = gameObject;
                 }
                 if (target != null)
                 {

@@ -5,10 +5,11 @@ using System.Collections.Generic;
 
 public class DMGObj : MonoBehaviour
 {
-    [SerializeField] float damage = 10f;
+    [SerializeField] public float damage = 10f;
     [SerializeField] float damageInterval = 1f;
     [SerializeField] HPController.HPType[] targetTypes;
-
+    public GameObject owner;
+    public GameObject parryPrefab;
     public Action<float> onHit;
 
 
@@ -78,7 +79,7 @@ public class DMGObj : MonoBehaviour
         HPController hp = other.GetComponent<HPController>();
         if (hp == null) return;
         if (Array.IndexOf(targetTypes, hp.Type) < 0) return;
-        hp.TakeDamage(damage);
+        hp.TakeDamage(this);
         onHit?.Invoke(damage);
     }
 }

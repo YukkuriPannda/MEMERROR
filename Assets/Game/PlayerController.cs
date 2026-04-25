@@ -98,12 +98,10 @@ public class PlayerController : MonoBehaviour
     void ActivateSpecialSkill0()
     {
         specialSkill0.isActivated = true;
-        Debug.Log("ActivateSpecialSkill0");
         specialSkill0.skill.ActivateSkill(this);
     }
     void ExecuteSpecialSkill0()
     {
-        Debug.Log("ExecuteSpecialSkill0");
         specialSkill0.skill.ExecuteSkill(this);
     }
 

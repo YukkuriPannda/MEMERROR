@@ -252,14 +252,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8714798622382265437, guid: e3710ff7c2d3301428a3e4b1cb537cb4, type: 3}
-      propertyPath: attackDistance
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8714798622382265437, guid: e3710ff7c2d3301428a3e4b1cb537cb4, type: 3}
-      propertyPath: attackDuration
-      value: 1.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -645,6 +637,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701608229}
   m_CullTransparentMesh: 1
+--- !u!1001 &758216471
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5244506352748327961, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      propertyPath: m_Name
+      value: zakoEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492243745267802975, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.14963
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492243745267802975, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.58104
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492243745267802975, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492243745267802975, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492243745267802975, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492243745267802975, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492243745267802975, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492243745267802975, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492243745267802975, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492243745267802975, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
 --- !u!1 &865515796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1588,6 +1637,8 @@ MonoBehaviour:
   damage: 10
   damageInterval: 1
   targetTypes: 00000000
+  owner: {fileID: 0}
+  parryPrefab: {fileID: 0}
 --- !u!58 &1307625467
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1690,6 +1741,7 @@ Transform:
   - {fileID: 1555469344}
   - {fileID: 1289128978}
   - {fileID: 237837925}
+  - {fileID: 1783817612}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1351634803
@@ -1715,7 +1767,7 @@ MonoBehaviour:
     isActivated: 0
     activateAction: {fileID: -4573737625617721473, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   specialSkill1:
-    skill: {fileID: 0}
+    skill: {fileID: 1783817613}
     isActivated: 0
     activateAction: {fileID: -6822632600796012694, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
 --- !u!114 &1351634804
@@ -1744,6 +1796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HPController
   maxHP: 100
+  parry: 0
   hpType: 0
 --- !u!58 &1351634807
 CircleCollider2D:
@@ -2286,6 +2339,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594801939}
   m_CullTransparentMesh: 1
+--- !u!1 &1783817611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1783817612}
+  - component: {fileID: 1783817613}
+  m_Layer: 0
+  m_Name: Parry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1783817612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783817611}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1351634802}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1783817613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783817611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0797f570137400d43981beaa7994d1d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Parry
+  parryEffectPrefab: {fileID: 7572404264376160306, guid: c485bc6f16990d940ac574ff334df85b, type: 3}
 --- !u!1 &1788282129
 GameObject:
   m_ObjectHideFlags: 0
@@ -2388,3 +2486,4 @@ SceneRoots:
   - {fileID: 125262374}
   - {fileID: 1307625465}
   - {fileID: 1127139506}
+  - {fileID: 758216471}
