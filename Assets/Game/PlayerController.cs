@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] public float moveSpeed = 5f;
     [SerializeField] public Transform anker;
     [SerializeField] InputActionReference moveAction;
 

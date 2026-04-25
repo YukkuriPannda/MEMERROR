@@ -9,8 +9,10 @@ public class SwordAttack : PlayerSkillBase
     private Animator swordAnimator;
     public override void ActivateSkill(PlayerController player)
     {
+        player.moveSpeed *= 0.5f;
+
         if (sword != null) return;
-        sword = Instantiate(swordPrefab, player.transform.position, Quaternion.identity, player.anker);
+        sword = Instantiate(swordPrefab, player.transform.position, player.anker.rotation, player.anker);
         swordAnimator = sword.GetComponent<Animator>();
     }
     [SerializeField] float dashSpeed = 10f;
@@ -29,7 +31,8 @@ public class SwordAttack : PlayerSkillBase
             elapsed += Time.deltaTime;
             yield return null;
         }
-        Destroy(sword);
+        Destroy(sword, 0.5f);
+        player.moveSpeed = player.moveSpeed / 0.5f;
     }
     public override void ExecuteSkill(PlayerController player)
     {
