@@ -1,4 +1,5 @@
 {
+    "dotnet.defaultSolution": "MEMERR.sln",
     "problems.decorations.enabled": true,
     "problems.showCurrentInStatus": true,
     "editor.showUnused": true,

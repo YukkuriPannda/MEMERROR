@@ -59,7 +59,6 @@ public class DMGObj : MonoBehaviour
 
         TryDamage(other);
         contactTimers[other] = damageInterval;
-        Debug.Log(contactTimers);
     }
 
     void OnTriggerExit2D(Collider2D other)

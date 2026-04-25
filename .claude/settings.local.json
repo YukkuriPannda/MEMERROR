@@ -28,7 +28,8 @@
       "Bash(cat Logs/shadercompiler-UnityShaderCompiler*.log)",
       "Read(//c/Users/Pannda/.claude/**)",
       "Read(//c/Users/Pannda/AppData/Roaming/Claude/**)",
-      "Bash(claude mcp:*)"
+      "Bash(claude mcp:*)",
+      "mcp__ide__getDiagnostics"
     ]
   }
 }

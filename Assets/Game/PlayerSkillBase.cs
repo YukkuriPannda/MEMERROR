@@ -6,4 +6,13 @@ public class PlayerSkillBase : MonoBehaviour
 	{
 
 	}
+	public virtual void ExecuteSkill(PlayerController player)
+	{
+
+	}
+	public virtual void ActivateSkill(PlayerController player)
+	{
+
+	}
+
 }
