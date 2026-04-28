@@ -38,6 +38,7 @@ public class ZakoEnemyController : MonoBehaviour
         var playerObj = GameObject.FindWithTag("Player");
         if (playerObj != null)
             target = playerObj.transform;
+        GameMaster.Instance?.RegisterEnemy(hpController);
     }
 
     void Update()

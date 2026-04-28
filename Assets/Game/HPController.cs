@@ -25,6 +25,7 @@ public class HPController : MonoBehaviour
 	void Awake()
 	{
 		CurrentHP = maxHP;
+		OnDeath += () => GameMaster.Instance?.DeathEvent.Invoke(this);
 	}
 
 	public void TakeDamage(DMGObj dmgObj)

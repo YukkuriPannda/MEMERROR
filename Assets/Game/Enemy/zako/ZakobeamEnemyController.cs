@@ -36,6 +36,7 @@ public class ZakobeamEnemyController : MonoBehaviour
         var playerObj = GameObject.FindWithTag("Player");
         if (playerObj != null)
             target = playerObj.transform;
+        GameMaster.Instance?.RegisterEnemy(hpController);
     }
 
     void Update()
