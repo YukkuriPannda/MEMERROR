@@ -45,8 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9380b8db032a35b41b14be3f95e447d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DMGObj
-  damage: 30
+  damage: 50
+  damageInterval: 1
   targetTypes: 00000000
+  owner: {fileID: 0}
+  parryPrefab: {fileID: 0}
 --- !u!61 &4348738877298212758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -77,7 +80,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -91,5 +94,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2, y: 1}
+  m_Size: {x: 3, y: 2}
   m_EdgeRadius: 0
