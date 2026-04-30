@@ -1,96 +1,31 @@
 using UnityEngine;
 
-public class ZakoEnemyController : MonoBehaviour
+public class ZakoEnemyController : EnemyControllerBase
 {
-    public enum State
-    {
-        following,
-        charging,
-        attacking,
-        damaging,
-        deathing,
-    }
-
-    [SerializeField] float moveSpeed = 2f;
-    [SerializeField] float attackDistance = 1.5f;
     [SerializeField] float chargeDuration = 0.6f;
     [SerializeField] float attackDuration = 0.3f;
-    [SerializeField] float damageDuration = 0.4f;
     [SerializeField] float lungeSpeed = 6f;
     [SerializeField] float lungeDrag = 12f;
     [SerializeField] GameObject attackInstance;
-    [SerializeField] Animator animator;
-    Transform target;
-    HPController hpController;
+
     Vector2 lungeVelocity;
-    [SerializeField] State currentState = State.following;
-    float stateTimer = 0f;
 
-    void Awake()
-    {
-        hpController = GetComponent<HPController>();
-        hpController.OnDamaged += OnDamaged;
-        hpController.OnDeath += OnDeath;
-    }
-
-    void Start()
-    {
-        var playerObj = GameObject.FindWithTag("Player");
-        if (playerObj != null)
-            target = playerObj.transform;
-        GameMaster.Instance?.RegisterEnemy(hpController);
-    }
-
-    void Update()
-    {
-        stateTimer -= Time.deltaTime;
-
-        switch (currentState)
-        {
-            case State.following: UpdateFollowing(); break;
-            case State.charging: UpdateCharging(); break;
-            case State.attacking: UpdateAttacking(); break;
-            case State.damaging: UpdateDamaging(); break;
-            case State.deathing: break;
-        }
-    }
-
-    void UpdateFollowing()
-    {
-        if (target == null) return;
-
-        Vector2 dir = (target.position - transform.position).normalized;
-        animator.transform.rotation = Quaternion.LookRotation(Vector3.forward, dir * -1f);
-        transform.Translate(dir * moveSpeed * Time.deltaTime);
-
-        float dist = Vector2.Distance(transform.position, target.position);
-        if (dist <= attackDistance)
-            ChangeState(State.charging);
-    }
-
-    void UpdateCharging()
+    protected override void UpdateCharging()
     {
         if (stateTimer <= 0f)
             ChangeState(State.attacking);
     }
 
-    void UpdateAttacking()
+    protected override void UpdateAttacking()
     {
         lungeVelocity = Vector2.Lerp(lungeVelocity, Vector2.zero, lungeDrag * Time.deltaTime);
         transform.Translate(lungeVelocity * Time.deltaTime);
 
         if (stateTimer <= 0f)
-        {
-            ChangeState(State.following);
-        }
-    }
-    void UpdateDamaging()
-    {
-        if (stateTimer <= 0f)
             ChangeState(State.following);
     }
 
-    void ChangeState(State next)
+    protected override void ChangeState(State next)
     {
         currentState = next;
 
@@ -106,15 +41,16 @@ public class ZakoEnemyController : MonoBehaviour
                 {
                     DMGObj dmgObj = Instantiate(
                         attackInstance,
-                        transform.position + transform.up * -1f,
-                        transform.rotation,
-                        transform
+                        transform.position + animator.transform.up * -1f,
+                        animator.transform.rotation
                     ).GetComponent<DMGObj>();
-                    dmgObj.owner = gameObject;
+                    Destroy(dmgObj.gameObject, 0.5f);
+                    if (dmgObj != null)
+                        dmgObj.owner = gameObject;
                 }
                 if (target != null)
                 {
-                    lungeVelocity = (target.position - transform.position).normalized * lungeSpeed;
+                    lungeVelocity = ((Vector2)target.position - (Vector2)transform.position).normalized * lungeSpeed;
                 }
                 break;
 
@@ -123,22 +59,8 @@ public class ZakoEnemyController : MonoBehaviour
                 break;
 
             case State.deathing:
-                animator.Play("Death");
-                Destroy(gameObject, 1f);
+                EnterDying();
                 break;
         }
-    }
-
-    void OnDamaged(float amount)
-    {
-        if (currentState == State.following || currentState == State.charging)
-        {
-            ChangeState(State.damaging);
-            animator.Play("Dmg");
-        }
-    }
-    void OnDeath()
-    {
-        ChangeState(State.deathing);
     }
 }

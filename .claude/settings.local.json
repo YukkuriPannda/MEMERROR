@@ -29,7 +29,8 @@
       "Read(//c/Users/Pannda/.claude/**)",
       "Read(//c/Users/Pannda/AppData/Roaming/Claude/**)",
       "Bash(claude mcp:*)",
-      "mcp__ide__getDiagnostics"
+      "mcp__ide__getDiagnostics",
+      "mcp__notion__notion-update-page"
     ]
   }
 }

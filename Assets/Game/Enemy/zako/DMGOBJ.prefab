@@ -46,7 +46,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DMGObj
   damage: 30
+  damageInterval: 1
   targetTypes: 00000000
+  owner: {fileID: 0}
+  parryPrefab: {fileID: 0}
 --- !u!61 &4348738877298212758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -91,5 +94,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2, y: 1}
+  m_Size: {x: 0.5, y: 3}
   m_EdgeRadius: 0
