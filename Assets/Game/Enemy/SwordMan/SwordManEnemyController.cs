@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class SwordManEnemyController : EnemyControllerBase
@@ -9,6 +10,7 @@ public class SwordManEnemyController : EnemyControllerBase
     [SerializeField] float lungeSpeed = 10f;
     [SerializeField] float minLungeSpeed = 3f;
     [SerializeField] float afterAttackDuration = 0.5f;
+    [SerializeField] float lungeStopDistance = 0.4f;
     [SerializeField] Animator swordAnimator;
     [SerializeField] GameObject dmgObjPrefab;
     [SerializeField] float dmgObjLifetime = 0.2f;
@@ -17,6 +19,7 @@ public class SwordManEnemyController : EnemyControllerBase
     int attackPhase;
     Vector2 lungeVelocity;
     float lungeDistanceTraveled;
+    float lungeTargetDist;
 
     protected override void UpdateCharging()
     {
@@ -41,9 +44,9 @@ public class SwordManEnemyController : EnemyControllerBase
                 Vector2 delta = lungeVelocity * Time.deltaTime;
                 lungeDistanceTraveled += delta.magnitude;
                 transform.Translate(delta);
-                if (lungeDistanceTraveled >= attackDistance)
+                if (lungeDistanceTraveled >= lungeTargetDist)
                 {
-                    SwordSwing();
+                    StartCoroutine(SwordSwing());
                     if (attackPhase == 0) { attackPhase = 1; stateTimer = reaimDuration; }
                     else { attackPhase = 3; stateTimer = afterAttackDuration; }
                 }
@@ -98,12 +101,13 @@ public class SwordManEnemyController : EnemyControllerBase
         float dist = target != null ? Vector2.Distance(transform.position, target.position) : attackDistance;
         float speed = Mathf.Clamp(lungeSpeed * (dist / attackDistance), minLungeSpeed, lungeSpeed);
         lungeVelocity = -(Vector2)animator.transform.up * speed;
+        lungeTargetDist = Mathf.Max(0f, dist - lungeStopDistance);
     }
 
-    void SwordSwing()
+    IEnumerator SwordSwing()
     {
         swordAnimator?.SetTrigger("Attack");
-        if (dmgObjPrefab == null) return;
+        yield return new WaitForSeconds(0.5f); // アニメーションの攻撃判定タイミングに合わせる
         var go = Instantiate(
             dmgObjPrefab,
             transform.position + animator.transform.up * -1f,
