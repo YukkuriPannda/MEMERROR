@@ -1584,6 +1584,9 @@ MonoBehaviour:
   settingCanvas: {fileID: 12154634}
   gameOverCanvas: {fileID: 1498819390}
   player: {fileID: 1351634803}
+  enemySpawner: {fileID: 1291846264}
+  normalPhaseDuration: 60
+  normalPhaseRepeat: 3
   globalVolumeAnimator: {fileID: 1384424602}
   replay_animator: {fileID: 1329355625}
 --- !u!4 &1163793601
@@ -1722,6 +1725,89 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RapidFireNormalBullet
   bulletPrefab: {fileID: 1797986144352877980, guid: 8bd8b25e61f81bb44997c76511bf3bbe, type: 3}
   firePoint: {x: 0, y: 0}
+--- !u!1 &1291846263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1291846265}
+  - component: {fileID: 1291846264}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1291846264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291846263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886ec635a4953384594ef000de21cb10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
+  player: {fileID: 1351634802}
+  minSpawnDistance: 4
+  spawnAreaCenter: {x: 0, y: 0}
+  spawnAreaSize: {x: 16, y: 9}
+  spawnWarningPrefab: {fileID: 0}
+  warningDuration: 1.5
+  activationDelay: 0.5
+  normalPhases:
+  - spawnThreshold: 5
+    spawnInterval: 1.5
+    enemyPool:
+    - prefab: {fileID: 5244506352748327961, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      tier: 0
+      threatValue: 1
+      spawnWeight: 2
+    - prefab: {fileID: 5244506352748327961, guid: bfd2dcf27a28de64fa9c4eb1fcb90df1, type: 3}
+      tier: 0
+      threatValue: 3
+      spawnWeight: 1
+  - spawnThreshold: 10
+    spawnInterval: 1.5
+    enemyPool:
+    - prefab: {fileID: 5244506352748327961, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
+      tier: 0
+      threatValue: 1
+      spawnWeight: 3
+    - prefab: {fileID: 5244506352748327961, guid: bfd2dcf27a28de64fa9c4eb1fcb90df1, type: 3}
+      tier: 0
+      threatValue: 3
+      spawnWeight: 2
+    - prefab: {fileID: 4261122219446691756, guid: 8f44a9f7540d3264ca281b9608a28dfb, type: 3}
+      tier: 0
+      threatValue: 5
+      spawnWeight: 1
+  bossPhase:
+    spawnThreshold: 5
+    spawnInterval: 1.5
+    enemyPool: []
+  bossPhaseTimeout: 60
+--- !u!4 &1291846265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291846263}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1307625462
 GameObject:
   m_ObjectHideFlags: 0
@@ -3194,3 +3280,4 @@ SceneRoots:
   - {fileID: 1163793601}
   - {fileID: 1157926144}
   - {fileID: 1384424605}
+  - {fileID: 1291846265}

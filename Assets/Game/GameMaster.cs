@@ -19,6 +19,9 @@ public class GameMaster : MonoBehaviour
     [SerializeField] GameObject settingCanvas;
     [SerializeField] GameObject gameOverCanvas;
     [SerializeField] PlayerController player;
+    [SerializeField] EnemySpawner enemySpawner;
+    [SerializeField] float normalPhaseDuration = 60f;
+    [SerializeField] int normalPhaseRepeat = 3;
     public Animator globalVolumeAnimator;
     public Animator replay_animator;
 
@@ -26,6 +29,7 @@ public class GameMaster : MonoBehaviour
 
     public bool isMenuOpen { get; private set; }
     public int phaseIndex { get; private set; }
+    bool bossPhaseEnded;
     public FieldStatus fieldStatus { get; private set; }
     public List<string> logs { get; private set; } = new();
     public int score { get; private set; }
@@ -42,6 +46,11 @@ public class GameMaster : MonoBehaviour
             var playerHP = player.GetComponent<HPController>();
             if (playerHP != null)
                 playerHP.OnDeath += OnPlayerDeath;
+        }
+        if (enemySpawner != null)
+        {
+            enemySpawner.OnBossPhaseEnd += () => bossPhaseEnded = true;
+            StartCoroutine(PhaseCycleRoutine());
         }
     }
 
@@ -74,6 +83,23 @@ public class GameMaster : MonoBehaviour
     {
         string enemyName = enemyHP.gameObject.name;
         enemyHP.OnDeath += () => OnEnemyDeath(enemyName);
+    }
+
+    IEnumerator PhaseCycleRoutine()
+    {
+        for (int i = 0; i < normalPhaseRepeat; i++)
+        {
+            phaseIndex = i;
+            enemySpawner.StartPhase(EnemySpawner.PhaseType.Normal, i);
+            yield return new WaitForSeconds(normalPhaseDuration);
+        }
+
+        phaseIndex = normalPhaseRepeat;
+        bossPhaseEnded = false;
+        enemySpawner.StartPhase(EnemySpawner.PhaseType.Boss);
+        yield return new WaitUntil(() => bossPhaseEnded);
+
+        Debug.Log("ボスフェーズクリア");
     }
 
     public void SetPhase(int index)

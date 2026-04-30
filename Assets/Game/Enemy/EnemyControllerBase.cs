@@ -15,6 +15,8 @@ public abstract class EnemyControllerBase : MonoBehaviour
     [SerializeField] protected float attackDistance = 1.5f;
     [SerializeField] protected float damageDuration = 0.4f;
     [SerializeField] protected Animator animator;
+    [SerializeField] protected int scoreValue = 100;
+    [SerializeField] protected int threatValue = 1;
 
     protected Transform target;
     protected HPController hpController;
@@ -42,10 +44,10 @@ public abstract class EnemyControllerBase : MonoBehaviour
         switch (currentState)
         {
             case State.following: UpdateFollowing(); break;
-            case State.charging:  UpdateCharging();  break;
+            case State.charging: UpdateCharging(); break;
             case State.attacking: UpdateAttacking(); break;
-            case State.damaging:  UpdateDamaging();  break;
-            case State.deathing:  break;
+            case State.damaging: UpdateDamaging(); break;
+            case State.deathing: break;
         }
     }
 
