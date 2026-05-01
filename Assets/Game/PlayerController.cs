@@ -10,6 +10,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] InputActionReference moveAction;
 
     [Space(10)]
+    [Header("Move Limit")]
+    [SerializeField] float minX = -8f;
+    [SerializeField] float maxX = 8f;
+    [SerializeField] float minY = -4f;
+    [SerializeField] float maxY = 4f;
+
+    [Space(10)]
     [Header("Skills")]
     [Header("Normal Skill")]
     public PlayerSkillBase normalSkill;
@@ -80,6 +87,10 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 input = moveAction.action.ReadValue<Vector2>();
         transform.Translate(input * moveSpeed * Time.deltaTime);
+        Vector3 pos = transform.position;
+        pos.x = Mathf.Clamp(pos.x, minX, maxX);
+        pos.y = Mathf.Clamp(pos.y, minY, maxY);
+        transform.position = pos;
     }
 
     void AnkerRotate()

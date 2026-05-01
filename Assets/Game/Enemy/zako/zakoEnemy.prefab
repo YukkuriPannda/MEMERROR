@@ -291,7 +291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adbda0eac30548e428a6e513b06e86af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HPController
-  maxHP: 100
+  maxHP: 50
+  parry: 0
   hpType: 1
 --- !u!50 &3013964496213825603
 Rigidbody2D:
@@ -386,14 +387,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ZakoEnemyController
   moveSpeed: 2
   attackDistance: 1
+  damageDuration: 1
+  animator: {fileID: 2196142233839308397}
+  scoreValue: 100
+  threatValue: 1
+  currentState: 0
   chargeDuration: 0.6
   attackDuration: 1
-  damageDuration: 1
   lungeSpeed: 12
   lungeDrag: 3
   attackInstance: {fileID: 7744307355349650751, guid: 179aa08effd783246baa3fea4276abcd, type: 3}
-  animator: {fileID: 2196142233839308397}
-  currentState: 0
 --- !u!1 &5428603515512772724
 GameObject:
   m_ObjectHideFlags: 0

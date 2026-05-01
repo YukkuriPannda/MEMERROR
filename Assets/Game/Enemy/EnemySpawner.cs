@@ -199,6 +199,18 @@ public class EnemySpawner : MonoBehaviour
       bossDefeated = true;
   }
 
+  public void KillAllEnemies()
+  {
+    HPController[] snapshot = aliveEnemies.ToArray();
+    foreach (HPController hp in snapshot)
+    {
+      if (hp != null)
+        hp.TakeDamage(999999f);
+    }
+    aliveEnemies.Clear();
+    currentThreatSum = 0f;
+  }
+
   void EndBossPhase()
   {
     if (spawnLoop != null) StopCoroutine(spawnLoop);

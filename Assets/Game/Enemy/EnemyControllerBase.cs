@@ -49,6 +49,8 @@ public abstract class EnemyControllerBase : MonoBehaviour
             case State.damaging: UpdateDamaging(); break;
             case State.deathing: break;
         }
+        if (GameMaster.Instance != null)
+            transform.position = GameMaster.Instance.ClampEnemyPosition(transform.position);
     }
 
     protected virtual void UpdateFollowing()

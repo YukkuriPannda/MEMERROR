@@ -22,6 +22,13 @@ public class GameMaster : MonoBehaviour
     [SerializeField] EnemySpawner enemySpawner;
     [SerializeField] float normalPhaseDuration = 60f;
     [SerializeField] int normalPhaseRepeat = 3;
+
+    [Space(10)]
+    [Header("Enemy Move Limit")]
+    [SerializeField] float enemyMinX = -8f;
+    [SerializeField] float enemyMaxX = 8f;
+    [SerializeField] float enemyMinY = -4f;
+    [SerializeField] float enemyMaxY = 4f;
     public Animator globalVolumeAnimator;
     public Animator replay_animator;
 
@@ -92,14 +99,23 @@ public class GameMaster : MonoBehaviour
             phaseIndex = i;
             enemySpawner.StartPhase(EnemySpawner.PhaseType.Normal, i);
             yield return new WaitForSeconds(normalPhaseDuration);
+            enemySpawner.KillAllEnemies();
         }
 
         phaseIndex = normalPhaseRepeat;
         bossPhaseEnded = false;
         enemySpawner.StartPhase(EnemySpawner.PhaseType.Boss);
         yield return new WaitUntil(() => bossPhaseEnded);
+        enemySpawner.KillAllEnemies();
 
         Debug.Log("ボスフェーズクリア");
+    }
+
+    public Vector3 ClampEnemyPosition(Vector3 pos)
+    {
+        pos.x = Mathf.Clamp(pos.x, enemyMinX, enemyMaxX);
+        pos.y = Mathf.Clamp(pos.y, enemyMinY, enemyMaxY);
+        return pos;
     }
 
     public void SetPhase(int index)

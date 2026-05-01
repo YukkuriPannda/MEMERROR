@@ -65,6 +65,15 @@ public class HPController : MonoBehaviour
 		Debug.Log($"{gameObject.name} took {amount} damage. Current HP: {CurrentHP}/{maxHP}");
 	}
 
+	public void TakeDamage(float amount)
+	{
+		if (CurrentHP <= 0f) return;
+		CurrentHP = 0f;
+		OnDamaged?.Invoke(amount);
+		OnHPChanged?.Invoke();
+		OnDeath?.Invoke();
+	}
+
 	public void Heal(float amount)
 	{
 		CurrentHP = Mathf.Min(maxHP, CurrentHP + amount);

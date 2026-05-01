@@ -1762,7 +1762,7 @@ MonoBehaviour:
   warningDuration: 1.5
   activationDelay: 0.5
   normalPhases:
-  - spawnThreshold: 5
+  - spawnThreshold: 3
     spawnInterval: 1.5
     enemyPool:
     - prefab: {fileID: 5244506352748327961, guid: 5c89c924a59d6484ba375c9077940714, type: 3}
@@ -1771,7 +1771,7 @@ MonoBehaviour:
       spawnWeight: 2
     - prefab: {fileID: 5244506352748327961, guid: bfd2dcf27a28de64fa9c4eb1fcb90df1, type: 3}
       tier: 0
-      threatValue: 3
+      threatValue: 2
       spawnWeight: 1
   - spawnThreshold: 10
     spawnInterval: 1.5
@@ -2335,7 +2335,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.3
+  m_Radius: 0.2
 --- !u!114 &1351634808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3017,7 +3017,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1351634802}
