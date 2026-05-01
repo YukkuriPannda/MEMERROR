@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using System.Collections;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public enum FieldStatus
 {
@@ -24,6 +25,10 @@ public class GameMaster : MonoBehaviour
     [SerializeField] int normalPhaseRepeat = 3;
 
     [Space(10)]
+    [Header("ScrollBar")]
+    [SerializeField] RectTransform scrollBar;
+
+    [Space(10)]
     [Header("Enemy Move Limit")]
     [SerializeField] float enemyMinX = -8f;
     [SerializeField] float enemyMaxX = 8f;
@@ -37,6 +42,8 @@ public class GameMaster : MonoBehaviour
     public bool isMenuOpen { get; private set; }
     public int phaseIndex { get; private set; }
     bool bossPhaseEnded;
+    float phaseStartTime;
+    float currentPhaseDuration;
     public FieldStatus fieldStatus { get; private set; }
     public List<string> logs { get; private set; } = new();
     public int score { get; private set; }
@@ -65,6 +72,16 @@ public class GameMaster : MonoBehaviour
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
             SetMenuOpen(!isMenuOpen);
+        UpdateScrollBar();
+    }
+
+    void UpdateScrollBar()
+    {
+        if (scrollBar == null || currentPhaseDuration <= 0f) return;
+        float t = Mathf.Clamp01((Time.time - phaseStartTime) / currentPhaseDuration);
+        Vector2 pos = scrollBar.anchoredPosition;
+        pos.y = Mathf.Lerp(400f, -400f, t);
+        scrollBar.anchoredPosition = pos;
     }
 
     public void SetMenuOpen(bool open)
@@ -97,12 +114,15 @@ public class GameMaster : MonoBehaviour
         for (int i = 0; i < normalPhaseRepeat; i++)
         {
             phaseIndex = i;
+            phaseStartTime = Time.time;
+            currentPhaseDuration = normalPhaseDuration;
             enemySpawner.StartPhase(EnemySpawner.PhaseType.Normal, i);
             yield return new WaitForSeconds(normalPhaseDuration);
             enemySpawner.KillAllEnemies();
         }
 
         phaseIndex = normalPhaseRepeat;
+        currentPhaseDuration = 0f;
         bossPhaseEnded = false;
         enemySpawner.StartPhase(EnemySpawner.PhaseType.Boss);
         yield return new WaitUntil(() => bossPhaseEnded);
