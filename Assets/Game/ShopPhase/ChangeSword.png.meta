@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: 2839a71b1af4443438f9c8ff1eaabc3a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 34937358291997320
+    second: ChangeSword_0
+  - first:
+      213: 1407338213619544317
+    second: ChangeSword_1
+  - first:
+      213: 1201982416083846867
+    second: ChangeSword_2
+  - first:
+      213: -7650021562104559851
+    second: ChangeSword_3
+  - first:
+      213: -5267366961020868369
+    second: ChangeSword_4
+  - first:
+      213: 7284332248082214456
+    second: ChangeSword_5
+  - first:
+      213: -2393056297797224649
+    second: ChangeSword_6
+  - first:
+      213: 3749107611963470129
+    second: ChangeSword_7
+  - first:
+      213: 1874467767995445682
+    second: ChangeSword_8
+  - first:
+      213: 8267624138587618748
+    second: ChangeSword_9
+  - first:
+      213: 5095284292041805376
+    second: ChangeSword_10
+  - first:
+      213: 5977937802112656784
+    second: ChangeSword_11
+  - first:
+      213: -8993466826266879834
+    second: ChangeSword_12
+  - first:
+      213: -4550471321446148468
+    second: ChangeSword_13
+  - first:
+      213: -5317404950128192019
+    second: ChangeSword_14
+  - first:
+      213: -5934756173817917639
+    second: ChangeSword_15
+  - first:
+      213: -197045606835954518
+    second: ChangeSword_16
+  - first:
+      213: -6262165827872633045
+    second: ChangeSword_17
+  - first:
+      213: 7977244167386573931
+    second: ChangeSword_18
+  - first:
+      213: 4950026891451652831
+    second: ChangeSword_19
+  - first:
+      213: -8405074361596317177
+    second: ChangeSword_20
+  - first:
+      213: -5808921456982631445
+    second: ChangeSword_21
+  - first:
+      213: 6239750555840300710
+    second: ChangeSword_22
+  - first:
+      213: -3337199568019274000
+    second: ChangeSword_23
+  - first:
+      213: -5619630547366993826
+    second: ChangeSword_24
+  - first:
+      213: 1194666766015091605
+    second: ChangeSword_25
+  - first:
+      213: -5723848859520450079
+    second: ChangeSword_26
+  - first:
+      213: 2763818167114533951
+    second: ChangeSword_27
+  - first:
+      213: -7218896318429136394
+    second: ChangeSword_28
+  - first:
+      213: -3446222934694971601
+    second: ChangeSword_29
+  - first:
+      213: -8572742046717532854
+    second: ChangeSword_30
+  - first:
+      213: 1093272762676898427
+    second: ChangeSword_31
+  - first:
+      213: 733642518411910230
+    second: ChangeSword_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ChangeSword_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 351
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882926e975f1c7000800000000000000
+      internalID: 34937358291997320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 373
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df030ad16aed78310800000000000000
+      internalID: 1407338213619544317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 373
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d681f893ac4ea010800000000000000
+      internalID: 1201982416083846867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 373
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517cdaabbe9a5d590800000000000000
+      internalID: -7650021562104559851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_4
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 373
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8e8ba18ad86e6b0800000000000000
+      internalID: -5267366961020868369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_5
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 373
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83eecd8e595271560800000000000000
+      internalID: 7284332248082214456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_6
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 372
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737f842e9f72aced0800000000000000
+      internalID: -2393056297797224649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 280
+        width: 57
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131bbcb6281870430800000000000000
+      internalID: 3749107611963470129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 345
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1b94ee082730a10800000000000000
+      internalID: 1874467767995445682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 312
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbdb5fca9508cb270800000000000000
+      internalID: 8267624138587618748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_10
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 305
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e87c0511616b640800000000000000
+      internalID: 5095284292041805376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_11
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 272
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095ed4032c6e5f250800000000000000
+      internalID: 5977937802112656784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_12
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 231
+        width: 58
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a85a192299c03380800000000000000
+      internalID: -8993466826266879834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_13
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 266
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c86999c417a79d0c0800000000000000
+      internalID: -4550471321446148468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 232
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de594b4ee58c436b0800000000000000
+      internalID: -5317404950128192019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_15
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 226
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93fc60f14b283ada0800000000000000
+      internalID: -5934756173817917639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 192
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aacddf78014f34df0800000000000000
+      internalID: -197045606835954518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_17
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 79
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2fcf01ab515819a0800000000000000
+      internalID: -6262165827872633045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_18
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 186
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c22a31e4dd4be60800000000000000
+      internalID: 7977244167386573931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_19
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 152
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda5b9d3b3702b440800000000000000
+      internalID: 4950026891451652831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_20
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 146
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 702fe4e666d2b5b80800000000000000
+      internalID: -8405074361596317177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_21
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 113
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebd76c36b0926fa0800000000000000
+      internalID: -5808921456982631445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_22
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 106
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a648e7221c089650800000000000000
+      internalID: 6239750555840300710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_23
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 73
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6cf939ca2efa1d0800000000000000
+      internalID: -3337199568019274000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_24
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 67
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50a14f8acf0302b0800000000000000
+      internalID: -5619630547366993826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_25
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 33
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5935b45181f449010800000000000000
+      internalID: 1194666766015091605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_26
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 27
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e1424cd9cdc090b0800000000000000
+      internalID: -5723848859520450079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_27
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 5
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c02aacafd0b5620800000000000000
+      internalID: 2763818167114533951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_28
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9f7a5bb0451db90800000000000000
+      internalID: -7218896318429136394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_29
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27b3b0ff7e8c20d0800000000000000
+      internalID: -3446222934694971601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_30
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45a8526780870980800000000000000
+      internalID: -8572742046717532854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_31
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 5
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a67f509c51c2f00800000000000000
+      internalID: 1093272762676898427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeSword_32
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c9016cbfb6e2a00800000000000000
+      internalID: 733642518411910230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ChangeSword_0: 34937358291997320
+      ChangeSword_1: 1407338213619544317
+      ChangeSword_10: 5095284292041805376
+      ChangeSword_11: 5977937802112656784
+      ChangeSword_12: -8993466826266879834
+      ChangeSword_13: -4550471321446148468
+      ChangeSword_14: -5317404950128192019
+      ChangeSword_15: -5934756173817917639
+      ChangeSword_16: -197045606835954518
+      ChangeSword_17: -6262165827872633045
+      ChangeSword_18: 7977244167386573931
+      ChangeSword_19: 4950026891451652831
+      ChangeSword_2: 1201982416083846867
+      ChangeSword_20: -8405074361596317177
+      ChangeSword_21: -5808921456982631445
+      ChangeSword_22: 6239750555840300710
+      ChangeSword_23: -3337199568019274000
+      ChangeSword_24: -5619630547366993826
+      ChangeSword_25: 1194666766015091605
+      ChangeSword_26: -5723848859520450079
+      ChangeSword_27: 2763818167114533951
+      ChangeSword_28: -7218896318429136394
+      ChangeSword_29: -3446222934694971601
+      ChangeSword_3: -7650021562104559851
+      ChangeSword_30: -8572742046717532854
+      ChangeSword_31: 1093272762676898427
+      ChangeSword_32: 733642518411910230
+      ChangeSword_4: -5267366961020868369
+      ChangeSword_5: 7284332248082214456
+      ChangeSword_6: -2393056297797224649
+      ChangeSword_7: 3749107611963470129
+      ChangeSword_8: 1874467767995445682
+      ChangeSword_9: 8267624138587618748
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

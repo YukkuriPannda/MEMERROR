@@ -21,8 +21,10 @@ public class GameMaster : MonoBehaviour
     [SerializeField] GameObject gameOverCanvas;
     [SerializeField] PlayerController player;
     [SerializeField] EnemySpawner enemySpawner;
+    [SerializeField] ShopController shopController;
     [SerializeField] float normalPhaseDuration = 60f;
     [SerializeField] int normalPhaseRepeat = 3;
+    [SerializeField] int storage = 0;
 
     [Space(10)]
     [Header("ScrollBar")]
@@ -47,6 +49,7 @@ public class GameMaster : MonoBehaviour
     public FieldStatus fieldStatus { get; private set; }
     public List<string> logs { get; private set; } = new();
     public int score { get; private set; }
+    public int Storage => storage;
 
     void Awake()
     {
@@ -103,10 +106,10 @@ public class GameMaster : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    public void RegisterEnemy(HPController enemyHP)
+    public void RegisterEnemy(HPController enemyHP, int scoreValue)
     {
         string enemyName = enemyHP.gameObject.name;
-        enemyHP.OnDeath += () => OnEnemyDeath(enemyName);
+        enemyHP.OnDeath += () => OnEnemyDeath(enemyName, scoreValue);
     }
 
     IEnumerator PhaseCycleRoutine()
@@ -119,6 +122,7 @@ public class GameMaster : MonoBehaviour
             enemySpawner.StartPhase(EnemySpawner.PhaseType.Normal, i);
             yield return new WaitForSeconds(normalPhaseDuration);
             enemySpawner.KillAllEnemies();
+            yield return StartCoroutine(ShopPhaseRoutine());
         }
 
         phaseIndex = normalPhaseRepeat;
@@ -127,8 +131,27 @@ public class GameMaster : MonoBehaviour
         enemySpawner.StartPhase(EnemySpawner.PhaseType.Boss);
         yield return new WaitUntil(() => bossPhaseEnded);
         enemySpawner.KillAllEnemies();
+        yield return StartCoroutine(ShopPhaseRoutine());
 
         Debug.Log("ボスフェーズクリア");
+    }
+
+    public void CloseShop()
+    {
+        if (shopController == null) return;
+        shopController.IsShopOpen = false;
+        Time.timeScale = 1f;
+        shopController.gameObject.SetActive(false);
+    }
+
+    IEnumerator ShopPhaseRoutine()
+    {
+        StartCoroutine(Pause());
+        if (shopController == null) yield break;
+        currentPhaseDuration = 0f;
+        shopController.gameObject.SetActive(true);
+        shopController.OpenShop();
+        yield return new WaitUntil(() => !shopController.IsShopOpen);
     }
 
     public Vector3 ClampEnemyPosition(Vector3 pos)
@@ -136,6 +159,18 @@ public class GameMaster : MonoBehaviour
         pos.x = Mathf.Clamp(pos.x, enemyMinX, enemyMaxX);
         pos.y = Mathf.Clamp(pos.y, enemyMinY, enemyMaxY);
         return pos;
+    }
+
+    public bool TrySpendStorage(int amount)
+    {
+        if (storage < amount) return false;
+        storage -= amount;
+        return true;
+    }
+
+    public void AddStorage(int amount)
+    {
+        storage += amount;
     }
 
     public void SetPhase(int index)
@@ -148,13 +183,14 @@ public class GameMaster : MonoBehaviour
         fieldStatus = status;
     }
 
-    void OnEnemyDeath(string enemyName)
+    void OnEnemyDeath(string enemyName, int scoreValue)
     {
         string playerName = player != null ? player.gameObject.name : "Player";
         string log = $"{enemyName} killed by {playerName}";
         logs.Add(log);
         Debug.Log(log);
-        score += 100;
+        score += scoreValue;
+        storage += scoreValue;
     }
 
     void OnPlayerDeath()

@@ -1,0 +1,936 @@
+fileFormatVersion: 2
+guid: 2a72ad50fa4050f43bdb5baaad3c87a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4516654206489088923
+    second: HealPowerCard_0
+  - first:
+      213: -3853967565691007605
+    second: HealPowerCard_1
+  - first:
+      213: 7982699271773052888
+    second: HealPowerCard_2
+  - first:
+      213: 7545153822961461427
+    second: HealPowerCard_3
+  - first:
+      213: -7739408243374246664
+    second: HealPowerCard_4
+  - first:
+      213: 9010372570482694317
+    second: HealPowerCard_5
+  - first:
+      213: -6629964316834116973
+    second: HealPowerCard_6
+  - first:
+      213: 2517750137774658734
+    second: HealPowerCard_7
+  - first:
+      213: 3700643363395665088
+    second: HealPowerCard_8
+  - first:
+      213: 2502313305817169257
+    second: HealPowerCard_9
+  - first:
+      213: 8166972084880809801
+    second: HealPowerCard_10
+  - first:
+      213: -1505615220292413313
+    second: HealPowerCard_11
+  - first:
+      213: -2790854630674873366
+    second: HealPowerCard_12
+  - first:
+      213: 6800522218647240716
+    second: HealPowerCard_13
+  - first:
+      213: 9031271617400282424
+    second: HealPowerCard_14
+  - first:
+      213: 9199261683597186677
+    second: HealPowerCard_15
+  - first:
+      213: 453210976612220765
+    second: HealPowerCard_16
+  - first:
+      213: -5612358814390141796
+    second: HealPowerCard_17
+  - first:
+      213: -8912015210705970498
+    second: HealPowerCard_18
+  - first:
+      213: 3337905118981747504
+    second: HealPowerCard_19
+  - first:
+      213: 6087841557966634101
+    second: HealPowerCard_20
+  - first:
+      213: 8921912862867161908
+    second: HealPowerCard_21
+  - first:
+      213: -2938961718288331484
+    second: HealPowerCard_22
+  - first:
+      213: 4381877213587888319
+    second: HealPowerCard_23
+  - first:
+      213: -303194779068391992
+    second: HealPowerCard_24
+  - first:
+      213: -888632309339320835
+    second: HealPowerCard_25
+  - first:
+      213: 701638947183278601
+    second: HealPowerCard_26
+  - first:
+      213: -4242872551848295422
+    second: HealPowerCard_27
+  - first:
+      213: -1895658969109539434
+    second: HealPowerCard_28
+  - first:
+      213: -6810260407547004071
+    second: HealPowerCard_29
+  - first:
+      213: -8682220267743664240
+    second: HealPowerCard_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HealPowerCard_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 351
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b935e0f02116eae30800000000000000
+      internalID: 4516654206489088923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 373
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d4c1f0be4f38ac0800000000000000
+      internalID: -3853967565691007605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 373
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df5dca81be38ce60800000000000000
+      internalID: 7982699271773052888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 373
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b86c411d65c5b860800000000000000
+      internalID: 7545153822961461427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_4
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 373
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4b2f13539189490800000000000000
+      internalID: -7739408243374246664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_5
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 373
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da85b852d164b0d70800000000000000
+      internalID: 9010372570482694317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_6
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 372
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a4695b492adf3a0800000000000000
+      internalID: -6629964316834116973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_7
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 345
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea4df332968d0f220800000000000000
+      internalID: 2517750137774658734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 312
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ccfa9b38835b5330800000000000000
+      internalID: 3700643363395665088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_9
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 305
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d37fd91b00ab220800000000000000
+      internalID: 2502313305817169257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 272
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f1ad937d9e65170800000000000000
+      internalID: 8166972084880809801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_11
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 266
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f789c0a2feafa1be0800000000000000
+      internalID: -1505615220292413313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 232
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3cedeff74e449d0800000000000000
+      internalID: -2790854630674873366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 135
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00ce995dee406e50800000000000000
+      internalID: 6800522218647240716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_14
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 226
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d1631bfa5855d70800000000000000
+      internalID: 9031271617400282424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_15
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 192
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5761caee2c75aaf70800000000000000
+      internalID: 9199261683597186677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_16
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 186
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f77456bf02a4600800000000000000
+      internalID: 453210976612220765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_17
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 152
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c3e34d465ec12b0800000000000000
+      internalID: -5612358814390141796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_18
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 146
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba1efc3269225480800000000000000
+      internalID: -8912015210705970498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_19
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 113
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0337dde450f925e20800000000000000
+      internalID: 3337905118981747504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_20
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 106
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c367764ab5c7450800000000000000
+      internalID: 6087841557966634101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_21
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 73
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4338f2c7a7001db70800000000000000
+      internalID: 8921912862867161908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_22
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 67
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42dc3f473e5b637d0800000000000000
+      internalID: -2938961718288331484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_23
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 33
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8d84d0c1e8fcc30800000000000000
+      internalID: 4381877213587888319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_24
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 27
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd10ef64f5dacbf0800000000000000
+      internalID: -303194779068391992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_25
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 5
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd05e17f91faa3f0800000000000000
+      internalID: -888632309339320835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_26
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a307fa7e8bcb900800000000000000
+      internalID: 701638947183278601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_27
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204c3dfc4e94e15c0800000000000000
+      internalID: -4242872551848295422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_28
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69551f2163441b5e0800000000000000
+      internalID: -1895658969109539434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_29
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 5
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95bf04cdd381d71a0800000000000000
+      internalID: -6810260407547004071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealPowerCard_30
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0972177baae828780800000000000000
+      internalID: -8682220267743664240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HealPowerCard_0: 4516654206489088923
+      HealPowerCard_1: -3853967565691007605
+      HealPowerCard_10: 8166972084880809801
+      HealPowerCard_11: -1505615220292413313
+      HealPowerCard_12: -2790854630674873366
+      HealPowerCard_13: 6800522218647240716
+      HealPowerCard_14: 9031271617400282424
+      HealPowerCard_15: 9199261683597186677
+      HealPowerCard_16: 453210976612220765
+      HealPowerCard_17: -5612358814390141796
+      HealPowerCard_18: -8912015210705970498
+      HealPowerCard_19: 3337905118981747504
+      HealPowerCard_2: 7982699271773052888
+      HealPowerCard_20: 6087841557966634101
+      HealPowerCard_21: 8921912862867161908
+      HealPowerCard_22: -2938961718288331484
+      HealPowerCard_23: 4381877213587888319
+      HealPowerCard_24: -303194779068391992
+      HealPowerCard_25: -888632309339320835
+      HealPowerCard_26: 701638947183278601
+      HealPowerCard_27: -4242872551848295422
+      HealPowerCard_28: -1895658969109539434
+      HealPowerCard_29: -6810260407547004071
+      HealPowerCard_3: 7545153822961461427
+      HealPowerCard_30: -8682220267743664240
+      HealPowerCard_4: -7739408243374246664
+      HealPowerCard_5: 9010372570482694317
+      HealPowerCard_6: -6629964316834116973
+      HealPowerCard_7: 2517750137774658734
+      HealPowerCard_8: 3700643363395665088
+      HealPowerCard_9: 2502313305817169257
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

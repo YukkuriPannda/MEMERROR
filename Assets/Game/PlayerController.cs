@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public PlayerSkillBase normalSkill;
     public float normalSkillFrequency = 0.5f;
     private float nextNormalSkillTime = 0f;
+
     [Header("Special Skill")]
     [SerializeField] InputActionReference specialSkillExecuteAction;
     [Serializable]
@@ -31,22 +32,21 @@ public class PlayerController : MonoBehaviour
         public bool isActivated;
         public InputActionReference activateAction;
     }
-    [SerializeField] SpecialSkillData specialSkill0;
-    [SerializeField] SpecialSkillData specialSkill1;
+    public SpecialSkillData[] specialSkills;
 
 
     void OnEnable()
     {
         moveAction.action.Enable();
-        specialSkill0.activateAction.action.Enable();
-        specialSkill1.activateAction.action.Enable();
+        foreach (SpecialSkillData slot in specialSkills)
+            slot.activateAction.action.Enable();
     }
 
     void OnDisable()
     {
         moveAction.action.Disable();
-        specialSkill0.activateAction.action.Disable();
-        specialSkill1.activateAction.action.Disable();
+        foreach (SpecialSkillData slot in specialSkills)
+            slot.activateAction.action.Disable();
     }
 
     void Start()
@@ -62,23 +62,17 @@ public class PlayerController : MonoBehaviour
             NormalSkill();
             nextNormalSkillTime = Time.time + normalSkillFrequency;
         }
-        if (specialSkill0.activateAction.action.triggered)
+        foreach (SpecialSkillData slot in specialSkills)
         {
-            ActivateSpecialSkill0();
-        }
-        if (specialSkill1.activateAction.action.triggered)
-        {
-            ActivateSpecialSkill1();
+            if (slot.activateAction.action.triggered)
+                ActivateSpecialSkill(slot);
         }
         if (specialSkillExecuteAction.action.triggered)
         {
-            if (specialSkill0.isActivated)
+            foreach (SpecialSkillData slot in specialSkills)
             {
-                ExecuteSpecialSkill0();
-            }
-            if (specialSkill1.isActivated)
-            {
-                ExecuteSpecialSkill1();
+                if (slot.isActivated)
+                    ExecuteSpecialSkill(slot);
             }
         }
     }
@@ -106,24 +100,15 @@ public class PlayerController : MonoBehaviour
     {
         normalSkill.Skill(this);
     }
-    void ActivateSpecialSkill0()
+
+    void ActivateSpecialSkill(SpecialSkillData slot)
     {
-        specialSkill0.isActivated = true;
-        specialSkill0.skill.ActivateSkill(this);
-    }
-    void ExecuteSpecialSkill0()
-    {
-        specialSkill0.skill.ExecuteSkill(this);
+        slot.isActivated = true;
+        slot.skill.ActivateSkill(this);
     }
 
-    void ActivateSpecialSkill1()
+    void ExecuteSpecialSkill(SpecialSkillData slot)
     {
-
-        specialSkill1.isActivated = true;
-        specialSkill1.skill.ActivateSkill(this);
-    }
-    void ExecuteSpecialSkill1()
-    {
-        specialSkill1.skill.ExecuteSkill(this);
+        slot.skill.ExecuteSkill(this);
     }
 }

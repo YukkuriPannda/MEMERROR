@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: 0a7a0f9a59e06dd4b94bc92fecce7452
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5279837515682110336
+    second: AddSword_0
+  - first:
+      213: 4876994808757796922
+    second: AddSword_1
+  - first:
+      213: -1700139882374262474
+    second: AddSword_2
+  - first:
+      213: -6970314538797948526
+    second: AddSword_3
+  - first:
+      213: -4711588121902773767
+    second: AddSword_4
+  - first:
+      213: 9131391569325475985
+    second: AddSword_5
+  - first:
+      213: -8194626966507936579
+    second: AddSword_6
+  - first:
+      213: -5863713542612873694
+    second: AddSword_7
+  - first:
+      213: -2208298099712432620
+    second: AddSword_8
+  - first:
+      213: -4824830337135586011
+    second: AddSword_9
+  - first:
+      213: -3171471701447293364
+    second: AddSword_10
+  - first:
+      213: -3467660019875079135
+    second: AddSword_11
+  - first:
+      213: 2412864168592305640
+    second: AddSword_12
+  - first:
+      213: -3029370012774349845
+    second: AddSword_13
+  - first:
+      213: -3145937107051829390
+    second: AddSword_14
+  - first:
+      213: -6299443492593194912
+    second: AddSword_15
+  - first:
+      213: 3473632708297748407
+    second: AddSword_16
+  - first:
+      213: 3922854304809195631
+    second: AddSword_17
+  - first:
+      213: -783072528946186616
+    second: AddSword_18
+  - first:
+      213: 933001979843988458
+    second: AddSword_19
+  - first:
+      213: 1596932896601104324
+    second: AddSword_20
+  - first:
+      213: 5050378371459137269
+    second: AddSword_21
+  - first:
+      213: 6473270666058289754
+    second: AddSword_22
+  - first:
+      213: -812925931421665376
+    second: AddSword_23
+  - first:
+      213: 7815556764498228116
+    second: AddSword_24
+  - first:
+      213: 1683698593540103228
+    second: AddSword_25
+  - first:
+      213: -4765860416586825303
+    second: AddSword_26
+  - first:
+      213: 9040847656710678436
+    second: AddSword_27
+  - first:
+      213: -4773917180787335029
+    second: AddSword_28
+  - first:
+      213: 2742038212790901767
+    second: AddSword_29
+  - first:
+      213: -192985724885269396
+    second: AddSword_30
+  - first:
+      213: -2589156913976251975
+    second: AddSword_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AddSword_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 351
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084acf5d0cf3ab6b0800000000000000
+      internalID: -5279837515682110336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 373
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a30ce6b60f09ea340800000000000000
+      internalID: 4876994808757796922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 373
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6319b92e8c3e768e0800000000000000
+      internalID: -1700139882374262474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 373
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29125367bd7744f90800000000000000
+      internalID: -6970314538797948526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_4
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 373
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f90902f0931d9eb0800000000000000
+      internalID: -4711588121902773767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_5
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 373
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19844aa804839be70800000000000000
+      internalID: 9131391569325475985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_6
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 372
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db42572e036d64e80800000000000000
+      internalID: -8194626966507936579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_7
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 345
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e89eba997ef9ea0800000000000000
+      internalID: -5863713542612873694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 312
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4166870149c8a51e0800000000000000
+      internalID: -2208298099712432620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_9
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 305
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52551851f52ca0db0800000000000000
+      internalID: -4824830337135586011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 272
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46c70c6a4bacf3d0800000000000000
+      internalID: -3171471701447293364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_11
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 239
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c9589959560efc0800000000000000
+      internalID: -3467660019875079135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_12
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 266
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed663c6d273c7120800000000000000
+      internalID: 2412864168592305640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_13
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 232
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be34d5f060485f5d0800000000000000
+      internalID: -3029370012774349845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_14
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 226
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277a4787ed26754d0800000000000000
+      internalID: -3145937107051829390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_15
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 192
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0682655f481e398a0800000000000000
+      internalID: -6299443492593194912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_16
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 79
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bfe34a4b82d43030800000000000000
+      internalID: 3473632708297748407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_17
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 186
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6893cfb437c07630800000000000000
+      internalID: 3922854304809195631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 152
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 886bbce0fa7f125f0800000000000000
+      internalID: -783072528946186616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_19
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 146
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb465f7b50b2fc00800000000000000
+      internalID: 933001979843988458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 113
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf5b003202792610800000000000000
+      internalID: 1596932896601104324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_21
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 106
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe332cee5c861640800000000000000
+      internalID: 5050378371459137269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_22
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 73
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a525c59bf5da5d950800000000000000
+      internalID: 6473270666058289754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_23
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 67
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a778e42c28e7b4f0800000000000000
+      internalID: -812925931421665376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 33
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49371ddf77f667c60800000000000000
+      internalID: 7815556764498228116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_25
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 27
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c58c043f2bd5710800000000000000
+      internalID: 1683698593540103228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_26
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 5
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a14f34a3334cddb0800000000000000
+      internalID: -4765860416586825303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_27
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7a9a61b0b877d70800000000000000
+      internalID: 9040847656710678436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_28
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b80690c0e93afbdb0800000000000000
+      internalID: -4773917180787335029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_29
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70cd2f10a3dad0620800000000000000
+      internalID: 2742038212790901767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_30
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 5
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c640e757180625df0800000000000000
+      internalID: -192985724885269396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AddSword_31
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9e2b23187711cd0800000000000000
+      internalID: -2589156913976251975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AddSword_0: -5279837515682110336
+      AddSword_1: 4876994808757796922
+      AddSword_10: -3171471701447293364
+      AddSword_11: -3467660019875079135
+      AddSword_12: 2412864168592305640
+      AddSword_13: -3029370012774349845
+      AddSword_14: -3145937107051829390
+      AddSword_15: -6299443492593194912
+      AddSword_16: 3473632708297748407
+      AddSword_17: 3922854304809195631
+      AddSword_18: -783072528946186616
+      AddSword_19: 933001979843988458
+      AddSword_2: -1700139882374262474
+      AddSword_20: 1596932896601104324
+      AddSword_21: 5050378371459137269
+      AddSword_22: 6473270666058289754
+      AddSword_23: -812925931421665376
+      AddSword_24: 7815556764498228116
+      AddSword_25: 1683698593540103228
+      AddSword_26: -4765860416586825303
+      AddSword_27: 9040847656710678436
+      AddSword_28: -4773917180787335029
+      AddSword_29: 2742038212790901767
+      AddSword_3: -6970314538797948526
+      AddSword_30: -192985724885269396
+      AddSword_31: -2589156913976251975
+      AddSword_4: -4711588121902773767
+      AddSword_5: 9131391569325475985
+      AddSword_6: -8194626966507936579
+      AddSword_7: -5863713542612873694
+      AddSword_8: -2208298099712432620
+      AddSword_9: -4824830337135586011
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

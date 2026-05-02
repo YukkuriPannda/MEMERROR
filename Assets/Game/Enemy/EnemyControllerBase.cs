@@ -35,7 +35,7 @@ public abstract class EnemyControllerBase : MonoBehaviour
         var playerObj = GameObject.FindWithTag("Player");
         if (playerObj != null)
             target = playerObj.transform;
-        GameMaster.Instance?.RegisterEnemy(hpController);
+        GameMaster.Instance?.RegisterEnemy(hpController, scoreValue);
     }
 
     protected virtual void Update()
