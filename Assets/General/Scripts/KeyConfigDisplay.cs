@@ -1,13 +1,18 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class KeyConfigDisplay : MonoBehaviour
 {
-    [SerializeField] int KeyIndex0 = 4; // 0:moveUp 1:moveDown 2:moveLeft 3:moveRight 4:Skill1 5:Skill2 6:Skill3 7:activateSkill
-    [SerializeField] Transform waku0;
-    [SerializeField] int keyIndex1 = 5;
-    [SerializeField] Transform waku1;
+    [Serializable]
+    public class WakuConfig
+    {
+        public Transform waku;
+        public int keyIndex;
+    }
+
+    [SerializeField] WakuConfig[] wakuConfigs;
 
     void Start()
     {
@@ -22,11 +27,12 @@ public class KeyConfigDisplay : MonoBehaviour
     void Refresh()
     {
         var kb = SaveDataManager.Load().keyBindings ?? new SaveDataManager.Keybindings();
-        var list0 = kb[KeyIndex0];
-        var list1 = kb[keyIndex1];
-
-        ApplyKey(waku0, list0 != null && list0.Count > 0 ? list0[0] : KeyCode.None);
-        ApplyKey(waku1, list1 != null && list1.Count > 0 ? list1[0] : KeyCode.None);
+        foreach (WakuConfig config in wakuConfigs)
+        {
+            var list = kb[config.keyIndex];
+            KeyCode kc = list != null && list.Count > 0 ? list[0] : KeyCode.None;
+            ApplyKey(config.waku, kc);
+        }
     }
 
     void ApplyKey(Transform waku, KeyCode kc)

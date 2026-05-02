@@ -163,6 +163,8 @@ public class ShopController : MonoBehaviour
 	{
 		PlayerSkillBase skill = Instantiate(skillPrefab, player.transform);
 		player.specialSkills[slotIndex].skill = skill;
+		player.specialSkills[slotIndex].icon = skill.icon;
+		player.NotifySkillsChanged();
 	}
 
 	const int MaxSkillSlots = 3;
@@ -177,11 +179,13 @@ public class ShopController : MonoBehaviour
 			activateAction = newSlotAction,
 			isActivated = false,
 			skill = skill,
+			icon = skill.icon,
 		};
 		newSlotAction.action.Enable();
 
 		int oldLength = player.specialSkills.Length;
 		Array.Resize(ref player.specialSkills, oldLength + 1);
 		player.specialSkills[oldLength] = newSlot;
+		player.NotifySkillsChanged();
 	}
 }

@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29f7aee56941c0240b4f92f8fec516da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwordAttack
+  icon: {fileID: 21300000, guid: 1d70816f46fd2dd47aeb01c1fa0e7661, type: 3}
   swordPrefab: {fileID: 9174073629791587745, guid: 0d2570c4be6ec4a44ae22b15ba0169c3, type: 3}
   dmgOBJPrefab: {fileID: 413207580310860367, guid: 215234152a508f940af9881e30483b17, type: 3}
   dashSpeed: 30

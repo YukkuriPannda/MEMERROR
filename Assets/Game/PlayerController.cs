@@ -31,9 +31,13 @@ public class PlayerController : MonoBehaviour
         public PlayerSkillBase skill;
         public bool isActivated;
         public InputActionReference activateAction;
+        public Sprite icon;
     }
     public SpecialSkillData[] specialSkills;
 
+    public event Action OnSkillsChanged;
+
+    public void NotifySkillsChanged() => OnSkillsChanged?.Invoke();
 
     void OnEnable()
     {

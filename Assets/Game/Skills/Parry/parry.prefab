@@ -44,4 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0797f570137400d43981beaa7994d1d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parry
+  icon: {fileID: 21300000, guid: ab43ab9d67513184fa4771ab6c32d892, type: 3}
   parryEffectPrefab: {fileID: 7572404264376160306, guid: c485bc6f16990d940ac574ff334df85b, type: 3}

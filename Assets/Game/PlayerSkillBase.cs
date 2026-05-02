@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerSkillBase : MonoBehaviour
 {
+	public Sprite icon;
+
 	public virtual void Skill(PlayerController player)
 	{
 

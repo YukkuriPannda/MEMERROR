@@ -31,7 +31,8 @@
       "Bash(claude mcp:*)",
       "mcp__ide__getDiagnostics",
       "mcp__notion__notion-update-page",
-      "Bash(powershell *)"
+      "Bash(powershell *)",
+      "Bash(findstr \"guid\")"
     ]
   }
 }
