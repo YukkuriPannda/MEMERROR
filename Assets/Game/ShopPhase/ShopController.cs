@@ -83,6 +83,7 @@ public class ShopController : MonoBehaviour
 				});
 			}
 
+	
 			spawnedCards.Add(card);
 		}
 
@@ -91,10 +92,14 @@ public class ShopController : MonoBehaviour
 
 	int[] PickRandomIndexes(int count)
 	{
-		count = Mathf.Min(count, shopItems.Length);
 		List<int> pool = new();
-		for (int i = 0; i < shopItems.Length; i++) pool.Add(i);
+		for (int i = 0; i < shopItems.Length; i++)
+		{
+			if (shopItems[i].itemType == ShopItemType.ChangeSkill && player.specialSkills.Length == 0) continue;
+			pool.Add(i);
+		}
 
+		count = Mathf.Min(count, pool.Count);
 		int[] result = new int[count];
 		for (int i = 0; i < count; i++)
 		{

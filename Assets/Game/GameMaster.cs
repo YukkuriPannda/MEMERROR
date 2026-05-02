@@ -199,6 +199,7 @@ public class GameMaster : MonoBehaviour
         {
             gameOverCanvas.SetActive(true);
             globalVolumeAnimator.SetTrigger("open");
+            StartCoroutine(Pause());
         }
 
     }
